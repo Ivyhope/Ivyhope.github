@@ -65,8 +65,6 @@ button:hover {
     background-color: #00b318;
 }
 @media (max-width: 575.98px) {
-    /* Adjustments for mobile */
-    /* For example, you might want to make the font sizes smaller or stack elements vertically */
     header {
         padding: 10px 20px;
     }
