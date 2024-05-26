@@ -1,92 +1,120 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #00c3ff; 
+    padding: 0;
 }
 
-header {
-    background-color: #007BFF;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background-color: #333;
     color: white;
     padding: 10px 0;
 }
 
-nav {
-    background-color: #0056b3; 
-    padding: 10px;
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul {
-    list-style-type: initial;
+.navbar-logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    padding: 0 15px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+#WORKSPACE {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+
+#logocar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
-nav ul li {
+#menu ul li {
     display: inline-block;
+    margin-right: 20px;
+}
+
+#searchbar {
+    margin-right: 20px;
+}
+
+.srch {
+    padding: 5px;
+    width: 200px;
+}
+
+#sales {
+    padding: 50px 0;
+}
+
+#ft {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+}
+
+#ft p {
+    margin-bottom: 20px;
+}
+
+#subscribe {
+    display: flex;
+    align-items: center;
+}
+
+#subscribe input {
+    flex: 1;
     margin-right: 10px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-section#sales {
-    background-color: #9e8f49; 
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#card1, #card2, #card3 {
-    background-color: #9c3081; 
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background-color: #343a40; 
-    color: white;
-    padding: 20px;
-}
-
-button {
-    background-color: #007BFF;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #00b318;
-}
-@media (max-width: 575.98px) {
-    header {
-        padding: 10px 20px;
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
     }
-    #logocar {
-        flex-direction: column;
-        align-items: center;
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
     }
-}
-@media (min-width: 576px) and (max-width: 991px) {
-        flex-direction: column;
-        align-items: center;
+
+    .navbar-menu.active {
+        display: flex;
     }
-    #searchbar {
-        margin-top: 20px;
-        justify-content: center;
-    }
-}
-@media (min-width: 992px) {
-    header {
-        padding: 20px 40px;
-    }
-    #menu ul {
-        flex-direction: row;
+
+    .navbar-menu li {
+        padding: 10px;
     }
 }
