@@ -1,5 +1,5 @@
 body {
-   background-color:rgb(214, 199, 193) !important;;
+   background-color:blue(214, 199, 193) !important;;
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -9,7 +9,12 @@ body {
     width: 100%;
     margin-left: 0px;
 }
-
+header{
+    top:0;
+    position: fixed;
+    margin: 0px !important;
+    width: 100%;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -71,7 +76,7 @@ body {
 }
 image{
     width: 200px;
-    height: 400px;
+    height: 200px;
 }
 #menu ul {
     list-style-type: none;
@@ -143,6 +148,14 @@ image{
         display: flex;
         height: auto !important;;
     }
+   #followUs{
+        width: 100%;
+        margin-bottom: 70px !important;
+   #icon{
+        display:-ms-inline-grid;
+        justify-content: space-evenly;
+        padding: 5px;
+    }
     
 @media only screen and (min-width:600px) and (max-width:1100px) {
     .navbar{
@@ -150,4 +163,9 @@ image{
     }
     body {
         background-color: rgb(214, 199, 193);
+    }
+#icon{
+        display:-ms-inline-grid;
+        justify-content: space-evenly;
+        padding: 5px;
     }
