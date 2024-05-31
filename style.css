@@ -23,7 +23,7 @@ header{
 
 .navbar {
    display: flex;
-    background-color:  rgb(43, 159, 226);
+    background-color: blue(43, 159, 226);
     height: 60px;
     width: 100%;
     top: 0;
