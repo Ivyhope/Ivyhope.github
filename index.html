@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
      <nav class="navbar">
         <div class="navbar-container">
             <a href="#" class="navbar-logo"></a>
@@ -16,6 +17,7 @@
                  <li><a href="#">Services</a></li>
                  <li><a href="#">Contact</a></li>
             </ul>
+            </header>
             <div class="navbar-toggle">
     <header id="WORKSPACE">
         <nav id="Enjoy the view">
@@ -43,8 +45,27 @@
             </div>
         </nav>
     </header>
+    <div class="info1">
+            <main>
+                <form >
+                    <fieldset>
+                        <legend>Sign in to view my workspace</legend>
+                        <section>
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname"  placeholder="Enter full names"><br><br>
+                        </section>
 
-    <section id="sales">
+                        <section>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter Email Adress" required><br><br>
+                        </section>
+
+                        <section>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+                        </section>            
+
+    <section id="Briefing">
         <div class="d-block d-md-block" id="Home">
             <h1 class="text-center text-md-left col-10">Welcome to Ergocraft Workspace</h1>
             <p class="text-left col-10">Optimizing Workspaces for Productivity and Well-being</p>
@@ -93,9 +114,19 @@
         </div>
 
         <div class="m-2 m-md-4 m-lg-4 text-dark" id="invite">
-            <p>CONCLUSION</p>
         </div>
     </section>
+    <section>
+            <div id="followUs">
+                <h2>Follow us on Social Media</h2>
+                    <div id="icon">
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon><br>TWITTER</a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon><br>INSTAGRAM</a>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon><br>FACEBOOK</a>
+                    </div>
+            </div>
+        </section>
+                    
 
     <footer id="ft">
         <div class="row">
@@ -108,12 +139,16 @@
                 <button type="submit" class="btn btn-primary">Subscribe</button>
             </form>
         </div>
-    </footer>
-
-    <div class="container">
+        <div class="container">
         <h1 id="message">MY ENTIRE WORKSPACE</h1>
         <button id="colorButton">Change Color</button>
     </div>
+     <div class="contact">
+                <p>Email: hopeivy510@gmail.com</p>
+                <p>Tell: 0795921849 \\ 0705860866</p>
+            </div>
+    </footer>
+                        
     <script src="script.js"></script>
 </body>
 </html>
