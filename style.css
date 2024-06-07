@@ -174,31 +174,26 @@ main {
 }
 
 /* Home page sections */
-.home-banner {
-    width: 100%;
+.home-banner-wrapper {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400vh; /* Adjust the height of the banner to fit the viewport height */
+    background-color: #000; /* Optional: Set a background color */
 }
 
-.home-banner .home-banner-content {
-    position: center;
-    left: 50%;
-    margin-top: -50px;
-    width: fit-content;
-    max-width: 500px;
-    transform: translateX(50%);
-    background: url('../images/header/desktop.jpg');
+.home-banner {
+    text-align: center;
 }
 
-.home-banner .home-banner-content a {
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--color1);
+.home-banner img {
+    max-width: 400%;
+    max-height: 1400%;
+    width: auto; /* Ensure the image maintains its aspect ratio */
+    height: auto; /* Ensure the image maintains its aspect ratio */
 }
 
-.home-banner .home-banner-content a:hover {
-    border-color: var(--color2) !important;
-    color: var(--color2) !important;
-}
 
 .more layouts {
     display: flex;
