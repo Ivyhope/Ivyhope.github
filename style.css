@@ -214,20 +214,25 @@ main {
 }
 
 .more-layouts {
-    list-style: inline;
+    list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .more-layouts li {
     margin-right: 10px;
+    margin-bottom: 10px; /* Add margin-bottom to create space between rows */
+    flex: 0 0 calc(20% - 20px); /* Adjust width of each item */
 }
 
 .more-layouts img {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    display:inline;
 }
+
 
 @media (max-width: 768px) {
     .top-navigation .logo h1 {
