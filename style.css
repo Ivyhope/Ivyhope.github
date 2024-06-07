@@ -7,6 +7,11 @@ body {
 }
 
 header {
+    background-image: url('images/desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: blue; 
     width: 100px;
 }
 
@@ -208,13 +213,13 @@ main {
 }
 
 .more-layouts li {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .more-layouts img {
     width: 500%; /* Ensure images fill the available space */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 @media (max-width: 768px) {
