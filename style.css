@@ -120,7 +120,7 @@ header {
     background-color: pink;
     color: #fff;
     padding: 1rem;
-    display: inline-block;
+    display: inline;
     flex-wrap: wrap; /* Allow footer items to wrap on smaller screens */
     justify-content: center; /* Center items horizontally */
 }
@@ -208,13 +208,13 @@ main {
 .more-layouts-wrapper {
     background-color:none;
     padding: 20px 0;
-    display: inline-block;
+    display: inline;
     justify-content: center;
     align-items: center;
 }
 
 .more-layouts {
-    list-style: none;
+    list-style: inline;
     padding: 0;
 }
 
@@ -226,7 +226,7 @@ main {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    display:inline-block;
+    display:inline;
 }
 
 @media (max-width: 768px) {
