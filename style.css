@@ -235,10 +235,47 @@ main {
     display: block;
 }
 
+.home-services-list {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+.home-services-list::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.home-services-list li {
+    flex: 0 0 auto; /* Prevent shrinking or growing */
+    margin-right: 10px; /* Adjust spacing between images */
+}
+
+.home-services-list img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
 .page-video {
     width: 100%;
     position: relative;
 }
+.services-video {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the video horizontally */
+    align-items: center; /* Center the video vertically */
+    margin-top: 2rem; /* Adjust margin as needed */
+}
+
+.services-video video {
+    max-width: 100%; /* Ensure the video doesn't exceed the container width */
+    max-height: 100%; /* Ensure the video doesn't exceed the container height */
+}
+
 
 .page-video-content {
     position: absolute;
@@ -270,3 +307,44 @@ main {
 @media (min-width: 768px) {
     .home-services-list li {
         flex: 1 1 
+/* Adjustments for the footer section */
+.footer-wrapper {
+    background-color: pink;
+    color: #fff;
+    padding: 1rem;
+}
+
+.footer-column {
+    margin: 1rem;
+    flex: 1;
+}
+
+.footer-column h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0.5rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column .fab {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Adjustments for social icons */
+.footer-column ul.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-column ul.social-icons li:last-child {
+    margin-right: 0;
+}        
