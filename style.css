@@ -1,30 +1,110 @@
 /* General styles for the body and other elements */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-header {
+    font-family:sans-serif;
+    width: 100%;
     position: relative;
-    background: url('images/desktop.jpg') no-repeat center center;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    color: white;
+    height: 100%;}
+header {
+    width:100px;
     }
-header .desktop-navigation,
-header .mobile-navigation {
-    background: rgba(0, 0, 0, 0.5);
-}
-header h1, footer h2 {
-    text-align: center;
-}
+.mobile-navigation{
+    .visible-mobile{
+        background-image: url('../images/header-bg.jpg') ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(25, 26, 51, 0.9);
+            z-index: 1;
+        }
+        button{
+            position: relative;
+            z-index: 12;
+        }
+    }
+    .mobile-logo {
+        position: relative;
+        z-index: 12;
+        h1 {
+            color: white;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 1;
+            padding-top: 5px;
+            letter-spacing: 1px;
+        }
 
-/* Header and Navigation */
-.desktop-navigation {
-    display: none;
 }
+.desktop-navigation{
+    background-image: url ;
+    background-position:('..images/header/desktop.jpg') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(25, 26, 51, 0.9);
+        z-index: 1;
+    }
+    
+    .top-navigation{
+        border-bottom: 1px #aaa solid;
+        z-index: 12;
+        .nav-search {
+            min-width: 200px;
+            input {
+                border: none;
+                border-bottom: 1px solid #bebebe;
+                background: transparent;
+                color: #666;
+                font-size: 14px;
+                font-weight: 300;
+                width: 100%;
+            }
+    
+            input::placeholder {
+                color: #777;
+            }
+    
+            button {
+                color: #dadada;
+                font-size: 13px;
+            }
+        }         
+        .logo {
+            h1 {
+                color: white;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 1;
+                padding-top: 5px;
+                letter-spacing: 1px;
+            }
+    
+            span {
+                color: var(--color1);
+                font-weight: 800;
+                font-family: 'Gloock', sans-serif;
+            }
+        }
+        .sign-up{
+            min-width: 200px;
+            float: right;
+        }
+    }
+
 
 .mobile-navigation {
     display: block;
@@ -127,14 +207,29 @@ main {
     width: 100%;
     height: auto;
 }
-
-.home-banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+//Home page sections
+.home-banner{
+    width: 100%;
+    position: relative;
+    .home-banner-content{
+        position: relative;
+        left: 50%;
+        margin-top: -50px;
+        width: fit-content;
+        max-width: 500px;
+        transform: translateX(-50%);
+        background: url('..images/header/desktop.jpg');
+        a{
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--color1);
+            &:hover{
+                border-color: var(--color2)!important;
+                color: var(--color2)!important;
+            }
+        }
+    }
 }
-
 .home-team-list {
     display: flex;
     flex-wrap: wrap;
@@ -172,7 +267,32 @@ main {
     display: block;
 }
 
-
+.services-video{
+    width: 100%;
+    position: relative;
+}
+.services-video-content{
+    position: relative;   
+    left: 50%;
+    margin-top: -50px;
+    width: fit-content;
+    min-width: 450px;
+    max-width: 480px;
+    transform: translateX(-50%);
+    background: url('..images/header/desktop.jpg');
+    a {
+        font-weight: 400;
+        font-size: 15px;
+        color: var(--color1);
+        &:hover {
+            border-color: var(--color2) !important;
+            color: var(--color2) !important;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .sub-menu{left: -200px;}
+    
 @media (min-width: 768px) {
     .home-services-list li {
         flex: 1 1 45%;
