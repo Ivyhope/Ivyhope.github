@@ -5,13 +5,18 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-
-header, footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
+header {
+    position: relative;
+    background: url('images/desktop.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    }
+header .desktop-navigation,
+header .mobile-navigation {
+    background: rgba(0, 0, 0, 0.5);
 }
-
 header h1, footer h2 {
     text-align: center;
 }
@@ -70,6 +75,29 @@ nav ul li a {
     
     .sub-menu {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: blue;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+}
+    #toggle-menu:hover .sub-menu {
+    display: block;
+}
+
+.nav-search input {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-search button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
     }
     
     .bottom-navigation ul li:hover .sub-menu {
@@ -107,17 +135,43 @@ main {
     transform: translate(-50%, -50%);
 }
 
-.home-services-list {
+.home-team-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
 }
 
-.home-services-list li {
-    flex: 1 1 100%;
-    margin: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.home-team-list li {
+    flex: 0 0 calc(200% - 100px);
+    margin-bottom: 20px;
+    margin-right: 10px;
+    position: relative;
 }
+
+.home-team-list img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.team-list-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+}
+
+.home-team-list li:hover .team-list-content {
+    display: block;
+}
+
 
 @media (min-width: 768px) {
     .home-services-list li {
@@ -133,13 +187,13 @@ main {
 
 /* Footer */
 .footer-wrapper {
-    background-color: #333;
+    background-color: pink;
     color: #fff;
-    padding: 1em 0;
+    padding: 1 ;
 }
 
 .footer-column {
-    margin: 1em 0;
+    margin: 1;
 }
 
 .footer-column h2 {
@@ -149,10 +203,17 @@ main {
 
 .footer-column ul {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
+}
+.footer-column {
+    flex: 1;
 }
 
 .footer-column ul li a {
     color: #fff;
     text-decoration: none;
+}
+.footer-column .fab {
+    font-size: 24px;
+    margin-right: 10px;
 }
