@@ -180,8 +180,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 400vh; /* Adjust the height of the banner to fit the viewport height */
-    background-color: #000; /* Optional: Set a background color */
-}
+    background-color: blue;
 
 .home-banner {
     text-align: center;
@@ -189,9 +188,9 @@ main {
 
 .home-banner img {
     max-width: 400%;
-    max-height: 1400%;
+    max-height: 400%;
     width: auto; /* Ensure the image maintains its aspect ratio */
-    height: auto; /* Ensure the image maintains its aspect ratio */
+    height: 400; /* Ensure the image maintains its aspect ratio */
 }
 
 .more-layouts-wrapper {
@@ -213,7 +212,7 @@ main {
 }
 
 .more-layouts img {
-    width: 100%; /* Ensure images fill the available space */
+    width: 500%; /* Ensure images fill the available space */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
 }
@@ -275,8 +274,8 @@ main {
     position: absolute;
     margin-top: -50px;
     width: fit-content;
-    min-width: 450px;
-    max-width: 480px;
+    min-width: 550px;
+    max-width: 580px;
     transform: translateX(-50%);
     background: url('../images/header/desktop.jpg');
 }
@@ -314,7 +313,7 @@ main {
 }
 
 .footer-column h2 {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid black;
     padding-bottom: 0.5rem;
 }
 
@@ -324,7 +323,7 @@ main {
 }
 
 .footer-column ul li a {
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
 
