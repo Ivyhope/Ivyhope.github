@@ -8,7 +8,7 @@ body {
     padding: 0; /* Remove default padding */
 }
 .container-fluid {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -19,9 +19,9 @@ header {
     color: #fff;
     padding: 10px 0;
 }
-
+p{lrft
 .mobile-navigation .visible-mobile {
-    image: url('../images/header-bg.jpg');
+    image: url('../images/scooget.img');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
