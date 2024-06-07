@@ -63,7 +63,7 @@ header {
 .top-navigation {
     border-bottom: 1px #aaa solid;
     z-index: 12;
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px; /* Add padding horizontally */
@@ -113,7 +113,7 @@ header {
     background-color: pink;
     color: #fff;
     padding: 1rem;
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap; /* Allow footer items to wrap on smaller screens */
     justify-content: center; /* Center items horizontally */
 }
@@ -146,7 +146,7 @@ header {
 
 /* Adjustments for social icons */
 .footer-column ul.social-icons li {
-    display:flex;
+    display:inline-block;
     margin-right: 10px;
 }
 
@@ -168,8 +168,8 @@ main {
 .home-banner-wrapper {
     position: relative;
     height: 100vh; /* Adjust the height of the banner to fit the viewport height */
-    background-color: #000;
-    display: flex;
+    background-color: none;
+    display: inline-block;
     justify-content: center;
     align-items: center;
 }
@@ -186,9 +186,9 @@ main {
 }
 
 .more-layouts-wrapper {
-    background-color: #000;
+    background-color:none;
     padding: 20px 0;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
 }
@@ -206,7 +206,7 @@ main {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    display:flex;
+    display:inline-block;
 }
 
 @media (max-width: 768px) {
