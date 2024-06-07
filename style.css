@@ -194,41 +194,40 @@ main {
     height: auto; /* Ensure the image maintains its aspect ratio */
 }
 
-
-.more layouts {
+.more-layouts-wrapper {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Optional: Set a background color */
+    padding: 20px 0; /* Add padding to the wrapper */
+}
+
+.more-layouts {
+    display: flex;
     list-style: none;
     padding: 0;
 }
 
-.more layouts li {
-    margin-bottom: 20px;
+.more-layouts li {
     margin-right: 10px;
-    position: relative;
 }
 
-.more layouts img {
-    width: 100%;
-    height: auto;
+.more-layouts img {
+    width: 100%; /* Ensure images fill the available space */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
 }
 
-.more layouts {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    display: none;
+@media (max-width: 768px) {
+    .more-layouts-wrapper {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .more-layouts li {
+        margin-right: 5px; /* Adjust margin for smaller screens */
+    }
 }
 
-.more layouts li:hover {
-    display: block;
-}
 
 .home-services-list {
     display: flex;
