@@ -7,22 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <!-- Header Section -->
     <header id="WORKSPACE">
         <nav id="Enjoy the view">
             <div class="container-fluid d-block d-md-block d-lg-block" id="container">
                 <div class="d-block d-md-block" id="logocar">
                     <div id="logo" class="d-flex container-fluid">
                         <h1>ERGOCRAFT WORKSPACE</h1>
-                    </div>
-                    <div>
-                        <div class="d-block d-md-flex d-lg-flex float-lg-right" id="menu">
-                            <ul>
-                                <li><a href="#">Description</a></li>
-                                <li><a href="#">Set up and Layout</a></li>
-                                <li><a href="#">Organisation</a></li>
-                                <li><a href="#">Productivity</a></li>
-                                <li><a href="#">Inspiration and Creativity</a></li>
-                            </ul>
+                    </div
+                     <div class="bottom-navigation">
+                    <ul class="w-100 d-flex justify-content-center">
+                        <li><a href="#" class="text-white p-3 float-start   active">Home</a></li>
+                        <li><a href="#" class="text-white p-3 float-start  ">Our Page</a></li>
+                        <li class="position-relative ">
+                            <a href="" class="text-white p-3 float-start " id="toggle-menu">About <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="sub-menu position-absolute bg-white p-4 shadow container ">
+                                <div class="row">
+                                    <div class="sub-menu-column d-block col-4 ">
+                                        <ul class="d-block ">
+                                            <li><a href="#">Description</a></li>
+                                            <li><a href="#">Set up and Layout</a></li>
+                                            <li><a href="#">Organisation</a></li>
+                                            <li><a href="#">Productivity</a></li>
+                                            <li><a href="#">Inspiration and Creativity</a></li>
+                                        </ul>
+                                    </div>   
+                                    <li><a href="" class="text-white p-3 float-start  ">Media Center</a></li>
+                                    <li><a href="" class="text-white p-3 float-start  ">Contact Us</a></li>
+                    
                             <div class="d-flex d-md-flex text-md-right" id="searchbar">
                                 <input class="srch" type="search" name="" placeholder="Add text">
                                 <button type="button" class="btn btn-secondary">Search</button>
@@ -32,109 +44,193 @@
                 </div>
             </div>
         </nav>
+         <nav class="mobile-navigation d-block d-md-none position-relative ">
+            <div class="visible-mobile container-fluid px-3">
+                <div class="d-flex align-items-center justify-content-between py-2 ">
+                    <div class="mobile-logo">
+                        <h1><span>EGO</span>craft</h1>
+                    </div>
+                    <button class="text-white mt-2 fs-2 menu-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden-mobile position-absolute w-100">
+                <div class="">
+                    <ul>
+                        <li class=""><a href="" class="p-3 d-block text-center">Home</a></li>
+                        <li class=""><a href="" class="p-3 d-block text-center">About</a></li>
+                        <li class=""><a href="" class="p-3 d-block text-center">Media Center</a></li>
+                        <li class=""><a href="" class="p-3 d-block text-center">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <div class="info1">
-            <main>
-                <form >
-                    <fieldset>
-                        <legend>Sign in to view my workspace</legend>
-                        <section>
-                            <label for="fullname">Full Name</label>
-                            <input type="text" id="fullname" name="fullname"  placeholder="Enter full names"><br><br>
-                        </section>
-
-                        <section>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Enter Email Adress" required><br><br>
-                        </section>
-
-                        <section>
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
-                        </section>            
-
-    <section id="Briefing">
-        <div class="d-block d-md-block" id="Home">
-            <h1 class="text-center text-md-left col-10">Welcome to Ergocraft Workspace</h1>
-            <p class="text-left col-10">Optimizing Workspaces for Productivity and Well-being</p>
-            <h1>INTRODUCTION</h1>
-            <p>In today's dynamic work environment, the workspace plays a crucial role in fostering productivity, creativity, and overall well-being.
-               "ErgoCraft" aims to revolutionize how individuals and organizations approach workspace design and optimization through innovative software solutions.</p>
-            <h1>OBJECTIVES</h1>
-            <p>Efficiency: Develop tools to maximize space utilization and streamline workflow processes.</p>
-            <p>Comfort: Prioritize ergonomic design principles to enhance user comfort and reduce the risk of injuries.</p>
-            <p>Personalization: Provide customizable features to cater to diverse user preferences and work styles.</p>
-            <p>Data-driven Insights: Harness the power of data analytics to offer actionable insights for workspace improvement.</p>
-            <p class="text-left col-10">FEATURES</p>
-            <ul>
-                <li>Workspace Design</li>
-                <li>Ergonomic Assessments</li>
-                <li>Productivity Analytics</li>
-                <li>Collaborative Workspace</li>
-                <li>Well-being Insights</li>
-            </ul>
-            <div class="d-block" id="f1">
-                <h2>SAMPLE LAYOUTS</h2>
-                <div class="d-block d-md-flex">
-                    <div class="col-md-4" id="card1">
-                        <img src="office desk.img" class="card-img-top" alt="workspace 1">
-                    </div>
-                    <div class="col-md-4" id="card2">
-                        <img src="scooget.img" class="card-img-top" alt="workspace 2">
-                        <div class="card-body">
-                            <h5 class="card-title">The RTK</h5>
-                            <p class="card-text">High-precision for suitable workspaces</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4" id="card3">
-                        <div class="card mb-6">
-                            <img src="eden.img" class="card-img-top" alt="workspace 3">
-                            <div class="card-body">
-                                <h1 class="card-title">Eden</h1>
-                                <p class="card-text">Best workspace layout</p>
-                                <a href="#" class="btn btn-primary">View Details</a>
+    
+    <!-- Main Content -->
+    <main class="container-fluid container-md">
+        <section class="home-banner-wrapper pb-3 pb-md-5">
+            <div class="home-banner pb-3">
+                <figure>
+                    <img src="desktop.jpg" alt="">
+                </figure>
+                <div class="home-banner-content p-3 p-md-4 text-center d-flex flex-column ">
+                    <h1 class="text-white fs-3 fs-xl-2">Desktop used before</h1>
+                    <a href="" class="mt-2 text-white border-bottom float-start align-self-center"></a>
+                </div>
+            </div>
+        </section>
+    
+        <section class="home-services-wrapper py-4 py-md-5 border-top">
+            <h2 class="text-center pb-1 pb-md-3 text-uppercase fw-600">Our Page</h2>
+            <ul class="home-services-list px-4 pb-2 pb-md-1">
+                <li class="px-lg-3 px-2">
+                    <div class="h-100">
+                        <img src="decoded-data-computer.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <div class="services-list-content">
+                            <div>
+                                <h3 class="pt-3 fs-3 pb-2">Decoded-data-computer</h3>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="m-2 m-md-4 m-lg-4 text-dark" id="invite">
-        </div>
-    </section>
-    <section>
-            <div id="followUs">
-                <h2>Follow us on Social Media</h2>
-                    <div id="icon">
-                        <a href="#"><ion-icon name="logo-twitter"></ion-icon><br>TWITTER</a>
-                        <a href="#"><ion-icon name="logo-instagram"></ion-icon><br>INSTAGRAM</a>
-                        <a href="#"><ion-icon name="logo-facebook"></ion-icon><br>FACEBOOK</a>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <div class="h-100">
+                        <img src="desk-creative.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <div class="services-list-content">
+                            <div>
+                                <h3 class="pt-3 fs-3 pb-2">Creative desktop</h3>
+                            </div>
+                        </div>
                     </div>
-            </div>
-        </section>
-                    
-
-    <footer id="ft">
-        <div class="row">
-            <p class="float-left col-5">"ErgoCraft" represents a holistic approach to workspace optimization, combining ergonomic principles, data analytics, and user-centric design to create environments that promote productivity, creativity, and well-being. By embracing innovation and technology, 
-              we empower individuals and organizations to thrive in the ever-evolving landscape of work.</p>
-            <form class="d-block d-md-flex d-lg-flex" id="subscribe">
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Enter your email">
+                </li>
+                <li class="px-lg-3 px-2">
+                    <div class="h-100">
+                        <img src="person8.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <div class="services-list-content">
+                            <div>
+                                <h3 class="pt-3 fs-3 pb-2">Person working</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <div class="h-100">
+                        <img src="retro-computery.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <div class="services-list-content">
+                            <div>
+                                <h3 class="pt-3 fs-3 pb-2">Last layout</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="services-video pt-2 pt-md-5 position-relative w-100 ">
+                <video src="https://youtu.be/euE_nC5KgXc?si=3rRHP-HsUbunlaz5" controls loop class="w-100 video">
+                    Unsupported
+                </video>
+                <div class="services-video-content p-3 p-md-4 text-center d-flex flex-column ">
+                    <h1 class="text-white fs-3 fs-xl-2">Comfy Workspaces for all ages</h1>
                 </div>
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-            </form>
-        </div>
-        <div class="container">
-        <h1 id="message">MY ENTIRE WORKSPACE</h1>
-        <button id="colorButton">Change Color</button>
-    </div>
-     <div class="contact">
-                <p>Email: hopeivy510@gmail.com</p>
-                <p>Tell: 0795921849 \\ 0705860866</p>
             </div>
+
+            <section class="home-about-wrapper py-3 py-md-5 row mx-0 mx-lg-3 align-items-stretch ">
+                <div class="home-about-content h-100 align-self-stretch col-xs-12 col-lg-7 col-xl-6 py-2 py-md-3 py-lg-4 py-xl-5 px-sm-0 px-md-1 px-lg-4 px-xl-5 order-2 order-lg-1">
+                    <div class="d-flex flex-column h-100 ">
+                        <div>
+                            <h4 class="mb-2 fs-4 fw-normal">Enjoy <span>EGO</span>craft workspace</h4>
+                            <h2 class="mb-2 fs-3">Optimizing Workspaces for Productivity and Well-being</h2>
+                            <p class="pb-2 ">
+                                In today's dynamic work environment, the workspace plays a crucial role in fostering productivity, 
+                                creativity, and overall well-being."ErgoCraft" aims to revolutionize how individuals
+                                and organizations approach workspace design and optimization through innovative software solutions.
+                            </p>
+                        </div>
+                        <a href="#" class="learn-more-btn mt-2 mt-xl-5 align-self-start px-4 text-uppercase d-flex align-items-center">Learn More <i class="fi fi-rs-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <figure class="col-xs-12 col-lg-5 col-xl-6 py-3 px-0 ps-0 ps-xl-4 order-1 order-lg-2 ">
+                    <img src="decoded-data-computer.jpg" alt="" class="col-xs-12 col-sm-12 col-md-12">
+                </figure>
+            </section>
+
+            
+        <section class="home-services-wrapper py-4 py-md-5 border-top">
+            <h2 class="text-center pb-1 pb-md-3 text-uppercase fw-600">Our Page</h2>
+            <ul class="home-services-list px-4 pb-2 pb-md-1">
+                <li class="px-lg-3 px-2">
+                    <div class="h-100">
+                        <img src="decoded-data-computer.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <div class="services-list-content">
+                            <div>
+                                <h3 class="pt-3 fs-3 pb-2">Decoded-data-computer</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <div class="h-100">
+                        <img src="desk-creative.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <div class="services-list-content">
+                            <div>
+                                <h3 class="pt-3 fs-3 pb-2">Creative desktop</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <div class="h-100">
+                        <img src="office desk.img" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <div class="services-list-content">
+                            <div>
+                                <h3 class="pt-3 fs-3 pb-2">Person working</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <div class="h-100">
+                        <img src="scooget.img" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <div class="services-list-content">
+                            <div>
+                                <h3 class="pt-3 fs-3 pb-2">Last layout</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer class="">
+        <div class="footer-wrapper container-fluid container-md">
+            <div class="row justify-content-center py-3 py-md-5">
+                <div class="footer-column col-12 col-md-6 col-lg-4 col-xl-3">
+                    <h2 class="py-2 py-md-3 px-2 px-md-4 border-bottom ">QUICK LINKS</h2>
+                    <ul class="py-3 px-2 px-md-4">
+                        <li class="pb-2 "><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li class="pb-2 "><a href="#" class="text-white">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column col-12 col-md-6 col-lg-4 col-xl-3">
+                    <h2 class="text-uppercase py-2 py-md-3 px-2 px-md-4 border-bottom">Get in Touch</h2>
+                    <ul class="py-2 px-2 px-md-4">
+                        <li class="pb-2 "><a href="tel:+254720444333" class="text-white">Tel: 0795921849 \\ 0705860866</a></li>
+                        <li class="pb-2 "><a href="mailto:info@konstructio.com" class="text-white">hopeivy510@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column col-12 col-md-6 col-lg-4 col-xl-3">
+                    <h2 class="py-2 py-md-3 px-2 px-md-4 border-bottom">FOLLOW US:</h2>
+                    <ul class="py-3 px-2 px-md-4 d-flex ">
+                        <li class="pe-3"><a href="#" target="_blank" class="text-white fs-4 "><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                        <li class="pe-3"><a href="#" target="_blank" class="text-white fs-4 "><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li class="pe-3"><a href="#" target="_blank" class="text-white fs-4 "><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li class="pe-3"><a href="#" target="_blank" class="text-white fs-4 "><i class="fa-brands fa-square-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
                         
     <script src="script.js"></script>
