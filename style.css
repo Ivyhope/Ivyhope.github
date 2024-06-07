@@ -7,10 +7,17 @@ body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
 }
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 /* Adjustments for the header */
 header {
-    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
 .mobile-navigation .visible-mobile {
@@ -169,7 +176,7 @@ main {
     position: relative;
     height: 100vh; /* Adjust the height of the banner to fit the viewport height */
     background-color: none;
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -180,7 +187,20 @@ main {
     transform: translate(-50%, -50%);
     z-index: 1; /* Ensure content appears in front */
 }
-
+.home-about-content a {
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.home-about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 .home-banner {
     text-align: center;
 }
