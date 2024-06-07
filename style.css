@@ -136,9 +136,14 @@ p{lrft
     padding-bottom: 0.5rem;
 }
 
+.footer-column h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0.5em;
+}
+
 .footer-column ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
 }
 
 .footer-column ul li a {
@@ -146,10 +151,6 @@ p{lrft
     text-decoration: none;
 }
 
-.footer-column .fab {
-    font-size: 24px;
-    margin-right: 10px;
-}
 
 /* Adjustments for social icons */
 .footer-column ul.social-icons li {
